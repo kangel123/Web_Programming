@@ -1,0 +1,69 @@
+<html>
+<head>
+</head>
+<script>
+	let numOne = '';
+	let operator = '';
+	let numTwo = '';
+	const $operator = document.quarySelector('operator');
+	const $result = document.quarySelector('result');
+	const onClickNumber = (event) =>{if(operator){
+		numTwo+= event.target.textContent;
+		}else{
+		numOne+= event.target.textContent;
+		}
+	$result.value+=event.target.textContent;
+	};
+	document.quarySelector('#num-0').addEventListener('click',onClickNumber);
+	document.quarySelector('#num-1').addEventListener('click',onClickNumber);
+	document.quarySelector('#num-2').addEventListener('click',onClickNumber);
+	document.quarySelector('#num-3').addEventListener('click',onClickNumber);
+	document.quarySelector('#num-4').addEventListener('click',onClickNumber);
+	document.quarySelector('#num-5').addEventListener('click',onClickNumber);
+	document.quarySelector('#num-6').addEventListener('click',onClickNumber);
+	document.quarySelector('#num-7').addEventListener('click',onClickNumber);
+	document.quarySelector('#num-8').addEventListener('click',onClickNumber);
+	document.quarySelector('#num-9').addEventListener('click',onClickNumber);
+	document.quarySelector('#plus').addEventListener('click',()=>{});
+	document.quarySelector('#minus').addEventListener('click',()=>{});
+	document.quarySelector('#divide').addEventListener('click',()=>{});
+	document.quarySelector('#multiply').addEventListener('click',()=>{});
+	document.quarySelector('#calculate').addEventListener('click',()=>{});
+	document.quarySelector('#clear').addEventListener('click',()=>{});
+</script>
+<body>
+	<table border="1">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="result">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">AC</td>
+            <td>/</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td colspan="2">0</td>
+            <td>.</td>
+            <td>=</td>
+        </tr>
+    </table>
+</body>

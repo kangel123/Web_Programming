@@ -1,0 +1,71 @@
+<html>
+<head><title>여행신청서</title>
+<style>
+		table, th, td{
+			border: 1px solid #bcbcbc;
+		}
+		table{
+			width: 1000px;
+			height: 800px;
+		}
+		
+		td{
+			text-align: center;
+			width: 100px;
+		}
+	</style></head>
+<body>
+	<table>
+	<form method ="post">
+	<center><h2>여행 신청서</h2></center>
+	<tr>
+		<td>이름</td>
+		<td><input type="text"/></td>
+		<td rowspan="2">로고</td>
+		<td rowspan="2"><img src="https://www.adobe.com/kr/express/create/media_127a4cd0c28c2753638768caf8967503d38d01e4c.jpeg?width=400&format=jpeg&optimize=medium"></td>
+	</tr>
+	<tr>
+		<td>여행지역</td>
+		<td><select>
+			<option selected>지중해</option>
+			<option>태평양</option>
+			</select>
+		</td>
+		
+	</tr>
+	<tr>
+		<td>항공사</td>
+		<td colspan="3">
+			<input type="radio" name="airport"/>대한민국
+			<input type="radio" name="airport"/>아시아나
+			<input type="radio" name="airport"/>유나이티드
+			<input type="radio" name="airport"/>에어캐나다
+			<input type="radio" name="airport"/>JAL항공
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4">옵션</td>
+	</tr>
+	<tr>
+		<td colspan="4">
+				<input type="checkbox", name="option"/>석식
+				<input type="checkbox", name="option"/>호텔특식
+				<input type="checkbox", name="option"/>석식
+				<input type="checkbox", name="option"/>유레이패스
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4">기타</td>
+	</tr>
+	<tr>
+		<td colspan="4"><a href = "https://www.adobe.com/kr/express/create/logo" target="_blank"> 문의사항</a> &nbsp;&nbsp;&nbsp; 환불규정</td>
+	</tr>
+	</table>
+	<center>
+	<p><input type="submit" value="신청완료"> &nbsp;&nbsp;&nbsp;<input type="reset" value="다시쓰기">
+	</center>
+	
+	
+	
+</body>
+</html>
